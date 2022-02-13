@@ -6,6 +6,7 @@ module fsm #(
 )(
 	input CLK_IN, 
 	input DATA_IN,
+	input rst,
 	output GLED5, 
 	output RLED1, 
 	output RLED2, 
@@ -30,7 +31,8 @@ module fsm #(
 		SendPos = 8, // sending positive current through the loop (indicated by single bit.)
 		SendNeg = 9; // sending negative current through the loop 
 
-	reg [3:0] ns; // register holding current state
+	ref [3:0] cs; // register holding current state
+	reg [3:0] ns; // register holding next state
 
 	reg [9:0] counter1; // counter1
 	reg [4:0] counter2; // counter2
@@ -41,94 +43,101 @@ module fsm #(
 	reg millisecond;
 
 	always @(posedge CLK_IN) begin
-		if (rstMSCounter) begin
+		if (rst) begin
 			millisecondCounter <= 0;
 			millisecond <= 0;
-		end else begin
+		end else if (millisecondCounter == SOMENUMBER) begin
+			millisecond <= 1;
+			millisecondCounter <= 0;
+		end else 
 			millisecond <= 0;
-			if (millisecondCounter == SOMENUMBER) begin
-				millisecond <= 1;
-				millisecondCounter <= 0;
-			end else
-				millisecondCounter <= millisecondCounter + 1;
+			millisecondCounter <= millisecondCounter + 1;
 		end
 	end
 
 	always @(posedge CLK_IN) begin
-		cs <= ns;
+		if (rst) cs <= Reset;
+		else cs <= ns;
 	end
 
 	always @(posedge CLK_IN) begin
 		case (cs)
 			Reset: begin
 				if (DATA_IN) begin
-					ns <= Edge1;
-					counter1 <= 0;
+					ns = Edge1;
+					counter1 = 0;
 				end else begin
-					ns <= reset;
+					ns = Reset;
 				end
 			end
 			Edge1: begin
-				if (millisecond) counter1 <= counter1 + 1;
-				if (counter1 <= timeout && DATA_IN) begin
-					ns <= Edge2;
-					counter1 <= 0;
+				if (millisecond) counter1 <= counter1 + 1; // count up to timeout
+				if (DATA_IN) begin
+					if (counter1 > timeout) ns = Reset;
+					else begin
+						ns = Edge2;
+						counter1 = 0;
+					end
 				end else begin
-					ns <= reset;
+					ns = Edge1;
 				end
 			end
 			Edge2: begin
-				if (millisecond) counter1 <= counter1 + 1;
-				if (counter1 <= timeout && DATA_IN) begin
-					ns <= DataIn;
-					counter1 <= 0;
+				if (millisecond) counter1 <= counter1 + 1; // count up to timeout
+				if (DATA_IN) begin
+					if (counter1 > timeout) ns = Reset;
+					else begin
+						ns = DataIn;
+						counter1 = 0;
 				end else begin
-					ns <= reset;
+					ns = Edge2;
 				end
 			end
 			DataIn: begin
 				// waiting for signal to start metadata transfer
-				if (DATA_IN) ns <= Adding;
-				else ns <= DataIn;
-				dataStorage <= 0;
-				shift <= 0;
+				if (DATA_IN) begin
+					ns = Adding;
+					counter2 = 5'b01111;
+				end else ns = DataIn;
+				dataStorage = 0;
+				shift = 0;
 			end
 			Adding: begin
-				counter2 <= counter2 + 1;
-				if (DATA_IN) ns <= Subtracting;
+				counter2 = counter2 + 1;
+				if (DATA_IN) ns = Subtracting;
 				else ns <= Adding;
 			end
 			Subtracting: begin
-				counter2 <= counter2 - 1;
-				if (DATA_IN) ns <= EndBit;
-				else ns <= Subtracting;
+				counter2 = counter2 - 1;
+				if (DATA_IN) ns = EndBit;
+				else ns = Subtracting;
 			end
 			EndBit: begin
 				dataStorage[shift] = counter2[4];	
-				shift <= shift + 1;
-				if (shift == 2'd3) begin
-					ns <= WaitScan;
-					shift <= 0;
+				shift = shift + 1;
+				if (shift == 2'd4) begin
+					ns = WaitScan;
+					shift = 0;
 				end
 				else begin
-					counter2 <= 0;
-					ns <= Adding;
+					counter2 = 0;
+					ns = Adding;
 				end
 			end
 			WaitScan: begin
-				if (DATA_IN) ns <= SendPos;
-				else ns <= WaitScan;
+				if (DATA_IN) ns = SendPos;
+				else ns = WaitScan;
 			end
 			SendPos: begin
-				if (DATA_IN) ns <= SendNeg;
-				else ns <= SendPos;
+				if (DATA_IN) ns = SendNeg;
+				else ns = SendPos;
 			end
 			SendNeg: begin
-				if (DATA_IN) ns <= SendPos;
-				else ns <= SendNeg;
+				if (DATA_IN) ns = SendPos;
+				else ns = SendNeg;
 			end
 			default:
-				ns <= Reset;
+				ns = Reset;
 		endcase
 	end
 
