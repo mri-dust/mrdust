@@ -72,23 +72,20 @@ module fsm #(
 			end
 			Edge1: begin
 				if (millisecond) counter1 <= counter1 + 1; // count up to timeout
-				if (DATA_IN) begin
-					if (counter1 > timeout) ns = Reset;
-					else begin
-						ns = Edge2;
-						counter1 = 0;
-					end
+				if (counter1 > timeout) ns = Reset;
+				else if (DATA_IN) begin
+					ns = Edge2;
+					counter1 = 0;
 				end else begin
 					ns = Edge1;
 				end
 			end
 			Edge2: begin
 				if (millisecond) counter1 <= counter1 + 1; // count up to timeout
+				if (counter1 > timeout) ns = Reset;
 				if (DATA_IN) begin
-					if (counter1 > timeout) ns = Reset;
-					else begin
-						ns = DataIn;
-						counter1 = 0;
+					ns = DataIn;
+					counter1 = 0;
 				end else begin
 					ns = Edge2;
 				end
@@ -113,11 +110,11 @@ module fsm #(
 				else ns = Subtracting;
 			end
 			EndBit: begin
-				dataStorage[shift] = counter2[4];	
-				shift = shift + 1;
+				dataStorage[shift] <= counter2[4];	
+				shift <= shift + 1;
 				if (shift == 2'd4) begin
 					ns = WaitScan;
-					shift = 0;
+					shift <= 0;
 				end
 				else begin
 					counter2 = 0;
