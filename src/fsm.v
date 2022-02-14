@@ -1,9 +1,4 @@
-`default_nettype none
-
-// define a Count module
-module fsm #(
-	timeout=1000
-)(
+module fsm (
 	input CLK_IN, 
 	input DATA_IN,
 	input rst,
@@ -13,7 +8,7 @@ module fsm #(
 	output RLED3, 
 	output RLED4
 );
-
+	localparam timeout = 1000;
 	localparam 
 		// initialization sequence
 		Reset = 0, // waiting for the first edge
@@ -31,7 +26,7 @@ module fsm #(
 		SendPos = 8, // sending positive current through the loop (indicated by single bit.)
 		SendNeg = 9; // sending negative current through the loop 
 
-	ref [3:0] cs; // register holding current state
+	reg [3:0] cs; // register holding current state
 	reg [3:0] ns; // register holding next state
 
 	reg [9:0] counter1; // counter1
@@ -42,14 +37,23 @@ module fsm #(
 	reg [10:0] millisecondCounter;
 	reg millisecond;
 
+	wire dataBit;
+
+	edge_detector detect (
+		.clk(CLK_IN),
+		.dataIn(DATA_IN),
+		.rst(rst),
+		.dataOut(dataBit)
+	);
+
 	always @(posedge CLK_IN) begin
 		if (rst) begin
 			millisecondCounter <= 0;
 			millisecond <= 0;
-		end else if (millisecondCounter == SOMENUMBER) begin
+		end else if (millisecondCounter == 10000) begin
 			millisecond <= 1;
 			millisecondCounter <= 0;
-		end else 
+		end else begin
 			millisecond <= 0;
 			millisecondCounter <= millisecondCounter + 1;
 		end
@@ -63,7 +67,7 @@ module fsm #(
 	always @(posedge CLK_IN) begin
 		case (cs)
 			Reset: begin
-				if (DATA_IN) begin
+				if (dataBit) begin
 					ns = Edge1;
 					counter1 = 0;
 				end else begin
@@ -73,7 +77,7 @@ module fsm #(
 			Edge1: begin
 				if (millisecond) counter1 <= counter1 + 1; // count up to timeout
 				if (counter1 > timeout) ns = Reset;
-				else if (DATA_IN) begin
+				else if (dataBit) begin
 					ns = Edge2;
 					counter1 = 0;
 				end else begin
@@ -83,7 +87,7 @@ module fsm #(
 			Edge2: begin
 				if (millisecond) counter1 <= counter1 + 1; // count up to timeout
 				if (counter1 > timeout) ns = Reset;
-				if (DATA_IN) begin
+				if (dataBit) begin
 					ns = DataIn;
 					counter1 = 0;
 				end else begin
@@ -92,7 +96,7 @@ module fsm #(
 			end
 			DataIn: begin
 				// waiting for signal to start metadata transfer
-				if (DATA_IN) begin
+				if (dataBit) begin
 					ns = Adding;
 					counter2 = 5'b01111;
 				end else ns = DataIn;
@@ -101,12 +105,12 @@ module fsm #(
 			end
 			Adding: begin
 				counter2 = counter2 + 1;
-				if (DATA_IN) ns = Subtracting;
+				if (dataBit) ns = Subtracting;
 				else ns <= Adding;
 			end
 			Subtracting: begin
 				counter2 = counter2 - 1;
-				if (DATA_IN) ns = EndBit;
+				if (dataBit) ns = EndBit;
 				else ns = Subtracting;
 			end
 			EndBit: begin
@@ -122,15 +126,15 @@ module fsm #(
 				end
 			end
 			WaitScan: begin
-				if (DATA_IN) ns = SendPos;
+				if (dataBit) ns = SendPos;
 				else ns = WaitScan;
 			end
 			SendPos: begin
-				if (DATA_IN) ns = SendNeg;
+				if (dataBit) ns = SendNeg;
 				else ns = SendPos;
 			end
 			SendNeg: begin
-				if (DATA_IN) ns = SendPos;
+				if (dataBit) ns = SendPos;
 				else ns = SendNeg;
 			end
 			default:

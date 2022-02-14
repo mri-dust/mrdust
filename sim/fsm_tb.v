@@ -12,9 +12,8 @@ module fsm_tb();
 	wire [4:0] led;
 	reg data;
 
-	module fsm #(
-		timeout=1000
-	)(
+	fsm DUT (
+		.rst(rst),
 		.CLK_IN(clk), 
 		.DATA_IN(data),
 		.GLED5(led[0]), 
@@ -24,39 +23,55 @@ module fsm_tb();
 		.RLED4(led[4])
 	);
 
+	task checkState;
+		input state;
+		begin
+			assert(DUT.cs == state) else $error("Current state is incorrect!");
+		end
+	endtask
+
+	task checkDataOut;
+		input truth;
+		begin
+			assert(DUT.dataStorage == truth) else $error("Saved data is incorrect!");
+		end
+	endtask
+
+	integer i;
 	task transmit0;
 		begin 
-			repeat(2) @posedge(clk);
+			repeat (2) @(posedge clk);
 			#1;
 			data = 1;
-			@posedge(clk);
+			@(posedge clk);
 			#1;
 			data = 0;
 			for (i = 0; i < 6; i = i + 1) begin
-				@posedge(clk);
+				@(posedge clk);
 			end
 			#1;
 			data = 1;
-			@posedge(clk);
+			@(posedge clk);
 			#1;
 			data = 0;
 		end 
 	endtask
 
+	integer j;
 	task transmit1;
 		begin 
-			for (i = 0; i < 6; i = i + 1) begin
-				@posedge(clk);
+			for (j = 0; j < 6; j = j + 1) begin
+				@(posedge clk);
 			end
 			#1;
 			data = 1;
-			@posedge(clk);
+			@(posedge clk);
 			#1;
 			data = 0;
-			repeat(2) @posedge(clk);
+			repeat (2) @(posedge clk);
 			#1;
 			data = 1;
-			@posedge(clk);
+			@(posedge clk);
 			#1;
 			data = 0;
 		end 
@@ -66,16 +81,15 @@ module fsm_tb();
 	initial begin
 		#0;
 		$dumpfile("fsm_tb.fst");
-		$dumpvars(0, axi_stream_mux_tb);
+		$dumpvars(0, fsm_tb);
 		
-		// for when we have reset signal into the chip
-		// // note the reset signal is on asynchronous low
-		// @(posedge clk);
-		// rst = 1'b0;
-		// // hold reset for a bit
-		// @(posedge clk);
-		// rst = 1'b1;
-		// #1;
+		//for when we have reset signal into the chip
+		@(posedge clk);
+		rst = 1'b1;
+		// hold reset for a bit
+		@(posedge clk);
+		rst = 1'b0;
+		#1;
 
 		
 		@(posedge clk);
@@ -86,7 +100,7 @@ module fsm_tb();
 		data = 0;
 		
 		// should be in state 1
-
+		checkState(1);
 
 		@(posedge clk);
 		#1;
@@ -94,6 +108,9 @@ module fsm_tb();
 		@(posedge clk);
 		#1;
 		data = 0;
+
+		// should be in state 2
+		checkState(2);
 		
 		@(posedge clk);
 		#1;
@@ -102,3 +119,134 @@ module fsm_tb();
 		#1;
 		data = 0;
 
+		// should be in state 3
+		checkState(3);
+		
+		@(posedge clk);
+		#1;
+		rst = 1;
+		@(posedge clk);
+		#1;
+		rst = 0;
+		
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+		
+		// should be in state 1
+		checkState(1);
+
+		repeat (1000) @(posedge clk);
+		// should time out.
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+		
+		// should be in state 1
+		checkState(1);
+
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		// should be in state 2
+		checkState(2);
+		
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		// should be in state 3
+		checkState(3);
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+		
+		// should be in addition state
+		transmit1();
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		transmit0();
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		transmit1();
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		transmit1();
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		// should be in state wait to scan.
+		checkState(8);
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		checkState(9);
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		checkState(10);
+
+		@(posedge clk);
+		#1;
+		data = 1;
+		@(posedge clk);
+		#1;
+		data = 0;
+
+		checkState(9);
+
+		$finish();
+	end
+endmodule
