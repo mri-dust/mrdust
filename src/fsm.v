@@ -116,7 +116,7 @@ module fsm (
 			EndBit: begin
 				dataStorage[shift] <= counter2[4];	
 				shift <= shift + 1;
-				if (shift == 2'd4) begin
+				if (shift == 2'd3) begin
 					ns = WaitScan;
 					shift <= 0;
 				end
