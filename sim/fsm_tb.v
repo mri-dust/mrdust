@@ -74,9 +74,9 @@ module fsm_tb();
 	// note that these tasks should be called when the circuit is either in state 3 (about to begin add and sub) or state 6 (about to go back to add/sub or move on to transmit).
 	task transmit0;
 		begin 
-			$display("%0t starting transmit 0", $time);
 			pulse();
-			@(posedge clk);
+			$display("%0t starting transmit 0", $time);
+			repeat(2) @(posedge clk);
 			pulse();
 			repeat (6) @(posedge clk);
 			pulse();
@@ -84,11 +84,11 @@ module fsm_tb();
 	endtask
 	task transmit1;
 		begin 
-			$display("%0t starting transmit 1", $time);
 			pulse();
+			$display("%0t starting transmit 1", $time);
 			repeat (6) @(posedge clk);
 			pulse();
-			@(posedge clk);
+			repeat(2) @(posedge clk);
 			pulse();
 		end 
 	endtask
