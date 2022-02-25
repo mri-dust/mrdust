@@ -12,7 +12,7 @@ module fsm_tb();
 	wire [4:0] led;
 	reg data;
 
-	fsm2 #(
+	fsm #(
 		.TIMEOUT(10)
 	) DUT (
 		.rst(rst),
