@@ -12,9 +12,10 @@ module fsm_tb();
 	wire [4:0] led;
 	reg data;
 
-	module fsm #(
-		timeout=1000
-	)(
+	fsm #(
+		.TIMEOUT(10)
+	) DUT (
+		.rst(rst),
 		.CLK_IN(clk), 
 		.DATA_IN(data),
 		.GLED5(led[0]), 
@@ -24,81 +25,152 @@ module fsm_tb();
 		.RLED4(led[4])
 	);
 
+	task resetDUT;
+		begin
+			@(posedge clk);
+			#1;
+			rst = 1;
+			@(posedge clk);
+			#1;
+			rst = 0;
+		end
+	endtask
+
+	task pulse;
+		begin
+			#1;
+			data = 1;
+			@(posedge clk);
+			#1;
+			data = 0;
+			@(posedge clk);
+		end
+	endtask
+
+	task checkState;
+		input [3:0] state;
+		begin
+			#1;
+			assert(DUT.cs == state) else begin 
+				$error("%0t Current state is %d but expected %d!", $time, DUT.cs, state);
+				$finish();
+			end
+		end
+	endtask
+
+	task checkDataOut;
+		input [3:0] truth;
+		begin
+			@(posedge clk);
+			#1;
+			assert(DUT.dataStorage == truth) else begin 
+				$error("%0t Saved data is incorrect!", $time);
+				$finish();
+			end
+		end
+	endtask
+
+
+	// note that these tasks should be called when the circuit is either in state 3 (about to begin add and sub) or state 6 (about to go back to add/sub or move on to transmit).
 	task transmit0;
 		begin 
-			repeat(2) @posedge(clk);
-			#1;
-			data = 1;
-			@posedge(clk);
-			#1;
-			data = 0;
-			for (i = 0; i < 6; i = i + 1) begin
-				@posedge(clk);
-			end
-			#1;
-			data = 1;
-			@posedge(clk);
-			#1;
-			data = 0;
+			pulse();
+			$display("%0t starting transmit 0", $time);
+			repeat(2) @(posedge clk);
+			pulse();
+			repeat (6) @(posedge clk);
+			pulse();
 		end 
 	endtask
-
 	task transmit1;
 		begin 
-			for (i = 0; i < 6; i = i + 1) begin
-				@posedge(clk);
-			end
-			#1;
-			data = 1;
-			@posedge(clk);
-			#1;
-			data = 0;
-			repeat(2) @posedge(clk);
-			#1;
-			data = 1;
-			@posedge(clk);
-			#1;
-			data = 0;
+			pulse();
+			$display("%0t starting transmit 1", $time);
+			repeat (6) @(posedge clk);
+			pulse();
+			repeat(2) @(posedge clk);
+			pulse();
 		end 
 	endtask
-
 
 	initial begin
 		#0;
 		$dumpfile("fsm_tb.fst");
-		$dumpvars(0, axi_stream_mux_tb);
+		$dumpvars(0, fsm_tb);
 		
-		// for when we have reset signal into the chip
-		// // note the reset signal is on asynchronous low
-		// @(posedge clk);
-		// rst = 1'b0;
-		// // hold reset for a bit
-		// @(posedge clk);
-		// rst = 1'b1;
-		// #1;
-
-		
-		@(posedge clk);
-		#1;
-		data = 1;
-		@(posedge clk);
-		#1;
-		data = 0;
-		
-		// should be in state 1
-
+		$display("Starting test 1: normal operation.");
+		resetDUT();
 
 		@(posedge clk);
-		#1;
-		data = 1;
 		@(posedge clk);
-		#1;
-		data = 0;
 		
-		@(posedge clk);
-		#1;
-		data = 1;
-		@(posedge clk);
-		#1;
-		data = 0;
+		checkState(0);
 
+		// go to state 1
+		pulse();
+		checkState(1);
+
+		// go to state 2
+		pulse();
+		checkState(2);
+
+		// go to state 3
+		pulse();
+		checkState(3);
+		
+		// begin the data transmission sequence
+		transmit1();
+		transmit0();
+		transmit1();
+		transmit1();
+
+		// go to state to wait to scan.
+		pulse();
+		checkState(7);
+
+		pulse();
+		checkState(8);
+
+		pulse();
+		checkState(9);
+
+		pulse();
+		checkState(8);
+
+		assert (DUT.amplitude == 4'b1011) else begin 
+			$error("%0t Received Amplitude got %d but truth is %d", $time, DUT.amplitude, 4'b1011);
+			$finish();
+		end
+
+		$display("Done with test 1!");
+
+		$display("Starting test 2: force timeout conditions.");
+		resetDUT();
+
+		@(posedge clk);
+		@(posedge clk);
+		
+		checkState(0);
+
+		// go to state 1
+		pulse();
+		checkState(1);
+
+		// time out the circuit while it is in state 1
+		repeat (20) @(posedge clk);
+		// should be back to the reset state
+		checkState(0);
+
+		// go to state 1
+		pulse();
+		checkState(1);
+		// go to state 2
+		pulse();
+		checkState(2);
+
+		$display("Done with test 2!");
+
+		$display("done!");
+		$finish();
+	end
+endmodule
