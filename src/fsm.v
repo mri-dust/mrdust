@@ -173,9 +173,9 @@ module fsm #(
 	// wire up the green LED to be always on
 	assign GLED5 = positiveCurrent;
 	// wire up the red LEDs to the counter
-	assign RLED1 = amplitude[0];
-	assign RLED2 = amplitude[1];
-	assign RLED3 = amplitude[2];
-	assign RLED4 = amplitude[3];
+	assign RLED1 = cs[0];
+	assign RLED2 = cs[1];
+	assign RLED3 = cs[2];
+	assign RLED4 = cs[3];
 
 endmodule
