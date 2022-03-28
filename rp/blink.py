@@ -3,11 +3,9 @@
 import sys
 import time
 
-sys.path.append(".")
+import redpitaya_scpi as scpi
 
-import redpitaya_scpi
-
-rp_s = scpi(sys.argv[1])
+rp_s = scpi.scpi(sys.argv[1])
 
 if (len(sys.argv) > 2):
     led = int(sys.argv[2])
