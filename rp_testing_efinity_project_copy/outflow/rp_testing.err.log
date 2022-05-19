@@ -1,0 +1,531 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:30:09
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/fsm2.v:12)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:30:43
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/fsm2.v:12)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:30:46
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/fsm2.v:12)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:31:07
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/fsm2.v:12)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:31:34
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'LED' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:5)
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'BTN' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:6)
+[EFX-0010 VERI-ERROR] non-net port 'BTN' cannot be of mode input (VERI-1325) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:6)
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'pll_inst1_CLKOUT0' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:7)
+[EFX-0010 VERI-ERROR] non-net port 'pll_inst1_CLKOUT0' cannot be of mode input (VERI-1325) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:7)
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'gpio_inst8' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'gpio_inst8' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:28)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:33)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:35)
+[EFX-0010 VERI-ERROR] module 'testing' is ignored due to previous errors (VERI-1072) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:37)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:43:17
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'LED' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:5)
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'BTN' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:6)
+[EFX-0010 VERI-ERROR] non-net port 'BTN' cannot be of mode input (VERI-1325) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:6)
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'pll_inst1_CLKOUT0' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:7)
+[EFX-0010 VERI-ERROR] non-net port 'pll_inst1_CLKOUT0' cannot be of mode input (VERI-1325) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:7)
+[EFX-0010 VERI-ERROR] net type must be explicitly specified for 'gpio_inst8' when default_nettype is none (VERI-1906) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'gpio_inst8' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:28)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:33)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0010 VERI-ERROR] concurrent assignment to a non-net 'LED' is not permitted (VERI-1195) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:35)
+[EFX-0010 VERI-ERROR] module 'testing' is ignored due to previous errors (VERI-1072) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:37)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:50:13
+///////////////////////////////////
+
+[EFX-0021 ERROR] Verific elaboration of module 'rp_testing' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:50:39
+///////////////////////////////////
+
+[EFX-0021 ERROR] Verific elaboration of module 'rp_testing' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:51:38
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'out' is constantly driven from multiple places (VDB-1000) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:22)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:26)
+[EFX-0021 ERROR] Verific elaboration of module '' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:52:35
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'out' is constantly driven from multiple places (VDB-1000) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:22)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:26)
+[EFX-0021 ERROR] Verific elaboration of module '' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:54:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:55:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:58:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:58:48
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 15:49:55
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 15:54:18
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:04:53
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:08:26
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:09:54
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:15:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:19:55
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:22:29
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:25:53
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:32:45
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:35:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:40:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:43:11
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] Post-synthesis netlist has only vcc and gnd nets. Legal, but will cause router to crash. 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:43:25
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] Post-synthesis netlist has only vcc and gnd nets. Legal, but will cause router to crash. 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:44:16
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] Post-synthesis netlist has only vcc and gnd nets. Legal, but will cause router to crash. 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:44:20
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] Post-synthesis netlist has only vcc and gnd nets. Legal, but will cause router to crash. 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:44:57
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:47:08
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ';' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:27)
+[EFX-0010 VERI-ERROR] module 'testing' is ignored due to previous errors (VERI-1072) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:47)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:47:20
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:48:15
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:51:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:57:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:59:20
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:02:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:06:56
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:17:49
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:18:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:18:35
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:30:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:37:47
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'LED' is not declared (VERI-1128) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:39)
+[EFX-0010 VERI-ERROR] 'LED' is not declared (VERI-1128) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:40)
+[EFX-0010 VERI-ERROR] 'LED' is not declared (VERI-1128) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:41)
+[EFX-0010 VERI-ERROR] 'LED' is not declared (VERI-1128) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:42)
+[EFX-0010 VERI-ERROR] module 'testing' is ignored due to previous errors (VERI-1072) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:45)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:38:01
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:38:49
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:43:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:45:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:48:13
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:02:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:03:22
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:05:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:06:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:13:10
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:14:03
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:25:48
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:10)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:26:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:28:09
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:35:04
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:48:00
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VERI-1137) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:10)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:48:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:49:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:52:26
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:57:45
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 13:12:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:16:48
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:21:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:24:12
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:33:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:35:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:40:43
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] if-condition does not match any sensitivity list edge (VERI-1167) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0021 ERROR] Verific elaboration of module '' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:43:02
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] if-condition does not match any sensitivity list edge (VERI-1167) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0021 ERROR] Verific elaboration of module '' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:43:05
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] if-condition does not match any sensitivity list edge (VERI-1167) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0021 ERROR] Verific elaboration of module '' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:43:16
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] if-condition does not match any sensitivity list edge (VERI-1167) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0021 ERROR] Verific elaboration of module '' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:44:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:06:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:11:26
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:12:05
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:46:52
+///////////////////////////////////
+

@@ -1,0 +1,55 @@
+# Efinity Interface Configuration
+# Version: 2021.2.323.2.18
+# Date: 2022-05-08 11:06
+#
+# Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
+#
+# Device: T8F81
+# Package: 81-ball FBGA (final)
+# Project: rp_testing
+# Configuration mode: active (x1)
+# Timing Model: C2 (final)
+
+
+# Device setting
+design.set_device_property("1A","VOLTAGE","3.3","IOBANK")
+design.set_device_property("1B","VOLTAGE","3.3","IOBANK")
+design.set_device_property("1C","VOLTAGE","1.1","IOBANK")
+design.set_device_property("2A","VOLTAGE","3.3","IOBANK")
+design.set_device_property("2B","VOLTAGE","3.3","IOBANK")
+
+# Create instance
+design.create_input_gpio("BTN",1,0)
+design.create_output_gpio("LED",3,0)
+design.create_clockout_gpio("clk_output_inst")
+design.create_input_gpio("data_in")
+design.create_pll_input_clock_gpio("pll_inst1")
+design.create_output_gpio("to_osc")
+design.create_block("pll_inst1","PLL")
+
+# Set property, non-defaults
+design.set_property("clk_output_inst","OUT_CLK_PIN","clk_out_pin")
+design.set_property("pll_inst1","CLKOUT0_EN","1","PLL")
+design.set_property("pll_inst1","CLKOUT1_EN","0","PLL")
+design.set_property("pll_inst1","CLKOUT2_EN","0","PLL")
+design.set_property("pll_inst1","CLKOUT0_DIV","8","PLL")
+design.set_property("pll_inst1","CLKOUT0_PIN","pll_inst1_CLKOUT0","PLL")
+design.set_property("pll_inst1","LOCKED_PIN","","PLL")
+design.set_property("pll_inst1","M","80","PLL")
+design.set_property("pll_inst1","N","1","PLL")
+design.set_property("pll_inst1","O","1","PLL")
+design.set_property("pll_inst1","REFCLK_FREQ","10.0","PLL")
+design.set_property("pll_inst1","RSTN_PIN","","PLL")
+
+# Set resource assignment
+design.assign_pkg_pin("BTN[0]","J9")
+design.assign_pkg_pin("BTN[1]","J8")
+design.assign_pkg_pin("LED[0]","C5")
+design.assign_pkg_pin("LED[1]","B6")
+design.assign_pkg_pin("LED[2]","C7")
+design.assign_pkg_pin("LED[3]","A9")
+design.assign_pkg_pin("clk_output_inst","C2")
+design.assign_pkg_pin("data_in","B5")
+design.assign_pkg_pin("pll_inst1","C3")
+design.assign_pkg_pin("to_osc","G5")
+design.assign_resource("pll_inst1","PLL_0","PLL")

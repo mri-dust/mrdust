@@ -1,0 +1,172 @@
+cell { name: "clk_out_reg_2~FF" type: "eft" mode: "logic_ff_clk_RISING" }
+cell { name: "prev~FF" type: "eft" mode: "logic_ff_clk_RISING" }
+cell { name: "LED[3]" type: "io" mode: "outpad" fixed {x: 78 y: 115 k: 0} }
+cell { name: "LED[2]" type: "io" mode: "outpad" fixed {x: 78 y: 127 k: 0} }
+cell { name: "LED[1]" type: "io" mode: "outpad" fixed {x: 78 y: 137 k: 0} }
+cell { name: "LED[0]" type: "io" mode: "outpad" fixed {x: 78 y: 145 k: 0} }
+cell { name: "BTN[0]" type: "io" mode: "inpad" fixed {x: 78 y: 47 k: 1} }
+cell { name: "pll_inst1_CLKOUT0" type: "io" mode: "inpad" fixed {x: 0 y: 83 k: 1} }
+cell { name: "data_in" type: "io" mode: "inpad" fixed {x: 78 y: 152 k: 1} }
+cell { name: "to_osc" type: "io" mode: "outpad" fixed {x: 0 y: 92 k: 0} }
+cell { name: "clk_out" type: "io" mode: "outpad" fixed {x: 0 y: 96 k: 0} }
+cell { name: "VCC" type: "efl" mode: "logic" }
+cell { name: "dlatchrs_36/i2" type: "efl" mode: "logic" }
+cell { name: "dlatchrs_36/i3" type: "efl" mode: "logic" }
+cell { name: "dlatchrs_36/i4" type: "efl" mode: "logic" }
+cell { name: "LUT__42" type: "efl" mode: "logic" }
+cell { name: "dlatchrs_36/i1" type: "efl" mode: "logic" }
+cell { name: "LUT__43" type: "efl" mode: "logic" }
+cell { name: "LUT__44" type: "efl" mode: "logic" }
+cell { name: "LUT__45" type: "efl" mode: "logic" }
+cell { name: "LUT__46" type: "efl" mode: "logic" }
+cell { name: "LUT__47" type: "efl" mode: "logic" }
+cell { name: "LUT__50" type: "efl" mode: "logic" }
+cell { name: "LUT__51" type: "efl" mode: "logic" }
+cell { name: "LUT__52" type: "efl" mode: "logic" }
+cell { name: "LUT__53" type: "efl" mode: "logic" }
+cell { name: "LUT__54" type: "efl" mode: "logic" }
+cell { name: "CLKBUF__0" type: "gbuf_block" mode: "gbuf_block" fixed {x: 1 y: 83 k: 0} }
+net {
+	name: "clk_out"
+	terminal	{ cell: "clk_out_reg_2~FF" port: "O_seq" }
+	terminal	{ cell: "clk_out_reg_2~FF" port: "I[1]" }
+	terminal	{ cell: "clk_out" port: "outpad" }
+ }
+net {
+	name: "vcc"
+	type: CONSTANT
+	terminal	{ cell: "VCC" port: "O" }
+	terminal	{ cell: "clk_out_reg_2~FF" port: "CE" }
+	terminal	{ cell: "prev~FF" port: "CE" }
+	terminal	{ cell: "CLKBUF__0" port: "I[0]" }
+ }
+net {
+	name: "BTN[0]"
+	terminal	{ cell: "BTN[0]" port: "inpad" }
+	terminal	{ cell: "clk_out_reg_2~FF" port: "RE" }
+	terminal	{ cell: "prev~FF" port: "RE" }
+	terminal	{ cell: "LUT__42" port: "I[1]" }
+	terminal	{ cell: "LUT__43" port: "I[1]" }
+	terminal	{ cell: "LUT__54" port: "I[0]" }
+ }
+net {
+	name: "pll_inst1_CLKOUT0~O"
+	type: GLOBAL_CLOCK
+	gbuf_driven: true
+	terminal	{ cell: "CLKBUF__0" port: "clkout" }
+	terminal	{ cell: "clk_out_reg_2~FF" port: "clk" }
+	terminal	{ cell: "prev~FF" port: "clk" }
+ }
+net {
+	name: "data_in"
+	terminal	{ cell: "data_in" port: "inpad" }
+	terminal	{ cell: "prev~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__44" port: "I[0]" }
+ }
+net {
+	name: "prev"
+	terminal	{ cell: "prev~FF" port: "O_seq" }
+	terminal	{ cell: "LUT__44" port: "I[1]" }
+ }
+net {
+	name: "LED[3]"
+	terminal	{ cell: "LUT__50" port: "O" }
+	terminal	{ cell: "LED[3]" port: "outpad" }
+	terminal	{ cell: "dlatchrs_36/i1" port: "I[0]" }
+ }
+net {
+	name: "LED[2]"
+	terminal	{ cell: "LUT__51" port: "O" }
+	terminal	{ cell: "LED[2]" port: "outpad" }
+ }
+net {
+	name: "LED[1]"
+	terminal	{ cell: "LUT__52" port: "O" }
+	terminal	{ cell: "LED[1]" port: "outpad" }
+ }
+net {
+	name: "LED[0]"
+	terminal	{ cell: "LUT__53" port: "O" }
+	terminal	{ cell: "LED[0]" port: "outpad" }
+ }
+net {
+	name: "pll_inst1_CLKOUT0"
+	gbuf_driven: true
+	terminal	{ cell: "pll_inst1_CLKOUT0" port: "inpad" }
+	terminal	{ cell: "CLKBUF__0" port: "IO_in" }
+ }
+net {
+	name: "to_osc"
+	terminal	{ cell: "LUT__42" port: "O" }
+	terminal	{ cell: "to_osc" port: "outpad" }
+ }
+net {
+	name: "n28"
+	terminal	{ cell: "LUT__45" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i2" port: "I[0]" }
+ }
+net {
+	name: "n11"
+	terminal	{ cell: "dlatchrs_36/i2" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i2" port: "I[1]" }
+	terminal	{ cell: "LUT__45" port: "I[1]" }
+	terminal	{ cell: "LUT__46" port: "I[1]" }
+	terminal	{ cell: "LUT__47" port: "I[1]" }
+	terminal	{ cell: "LUT__51" port: "I[0]" }
+ }
+net {
+	name: "n26"
+	terminal	{ cell: "LUT__44" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i2" port: "I[2]" }
+	terminal	{ cell: "dlatchrs_36/i3" port: "I[2]" }
+	terminal	{ cell: "dlatchrs_36/i4" port: "I[2]" }
+	terminal	{ cell: "dlatchrs_36/i1" port: "I[2]" }
+ }
+net {
+	name: "n27"
+	terminal	{ cell: "LUT__54" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i2" port: "I[3]" }
+	terminal	{ cell: "dlatchrs_36/i3" port: "I[3]" }
+	terminal	{ cell: "dlatchrs_36/i4" port: "I[3]" }
+	terminal	{ cell: "dlatchrs_36/i1" port: "I[3]" }
+ }
+net {
+	name: "n29"
+	terminal	{ cell: "LUT__46" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i3" port: "I[0]" }
+ }
+net {
+	name: "n12"
+	terminal	{ cell: "dlatchrs_36/i3" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i3" port: "I[1]" }
+	terminal	{ cell: "LUT__46" port: "I[2]" }
+	terminal	{ cell: "LUT__47" port: "I[2]" }
+	terminal	{ cell: "LUT__52" port: "I[0]" }
+ }
+net {
+	name: "n30"
+	terminal	{ cell: "LUT__47" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i4" port: "I[0]" }
+ }
+net {
+	name: "n13"
+	terminal	{ cell: "dlatchrs_36/i4" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i4" port: "I[1]" }
+	terminal	{ cell: "LUT__47" port: "I[3]" }
+	terminal	{ cell: "LUT__53" port: "I[0]" }
+ }
+net {
+	name: "n76"
+	terminal	{ cell: "LUT__43" port: "O" }
+	terminal	{ cell: "LUT__42" port: "I[0]" }
+	terminal	{ cell: "LUT__43" port: "I[0]" }
+ }
+net {
+	name: "n10"
+	terminal	{ cell: "dlatchrs_36/i1" port: "O" }
+	terminal	{ cell: "dlatchrs_36/i1" port: "I[1]" }
+	terminal	{ cell: "LUT__45" port: "I[0]" }
+	terminal	{ cell: "LUT__46" port: "I[0]" }
+	terminal	{ cell: "LUT__47" port: "I[0]" }
+	terminal	{ cell: "LUT__50" port: "I[0]" }
+ }

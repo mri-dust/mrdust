@@ -1,0 +1,12 @@
+clock {
+  name: "pll_inst1_CLKOUT0"
+  period: 1000
+  target_pin {
+    cell: "pll_inst1_CLKOUT0"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 140
+  }
+}

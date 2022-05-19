@@ -1,0 +1,2 @@
+Instance Name,Instance Type,Severity,Rule,Description
+clk_output_inst,clock,warning,clock_rule_undefined_name,No clock source defined (clk_out)

@@ -1,0 +1,119 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2021.2.323.2.18 
+Compiled: Mar 16 2022.
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T8F81" ...
+
+***** Beginning stage routing graph generation ... *****
+Read ipin pattern from /home/mrdust/Documents/efinity/2021.2/arch/./ipin_oph.xml
+Finished parsing ipin pattern file '/home/mrdust/Documents/efinity/2021.2/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/mrdust/Documents/efinity/2021.2/arch/./sb_connectivity_subset.xdb'.
+BuildGraph process took 1.55443 seconds.
+	BuildGraph process took 1.51 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 509.388 MB, end = 608.72 MB, delta = 99.332 MB
+BuildGraph process resident set memory usage: begin = 73 MB, end = 172.892 MB, delta = 99.892 MB
+	BuildGraph process peak resident set memory usage = 280.5 MB
+check rr_graph process took 0.0572413 seconds.
+	check rr_graph process took 0.06 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 621.032 MB, end = 622.616 MB, delta = 1.584 MB
+check rr_graph process resident set memory usage: begin = 185.036 MB, end = 186.62 MB, delta = 1.584 MB
+	check rr_graph process peak resident set memory usage = 280.5 MB
+Generated 393771 RR nodes and 1460267 RR edges
+This design has 0 global control net(s). See /home/mrdust/Documents/efinity/2021.2/project/rp_testing/outflow/rp_testing.route.rpt for details.
+Routing graph took 1.66948 seconds.
+	Routing graph took 1.62 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 509.388 MB, end = 613.376 MB, delta = 103.988 MB
+Routing graph resident set memory usage: begin = 73 MB, end = 177.62 MB, delta = 104.62 MB
+	Routing graph peak resident set memory usage = 280.5 MB
+***** Ending stage routing graph generation *****
+***** Beginning stage routing ... *****
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+         1           15              2.322             0.0267
+         2            4              2.322             0.0182
+         3            0              2.322             0.0195
+
+Successfully routed netlist after 3 routing iterations and 17087 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+Serial number (magic cookie) for the routing is: 18526761
+Netlist fully routed.
+
+Successfully created FPGA route file '/home/mrdust/Documents/efinity/2021.2/project/rp_testing/outflow/rp_testing.route'
+Routing took 0.160649 seconds.
+	Routing took 0.15 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 613.376 MB, end = 614.912 MB, delta = 1.536 MB
+Routing resident set memory usage: begin = 177.62 MB, end = 177.876 MB, delta = 0.256 MB
+	Routing peak resident set memory usage = 280.5 MB
+***** Ending stage routing *****
+***** Beginning stage final timing analysis ... *****
+WARNING(1): Found combinational cycle from timing node 81 to 82
+WARNING(2): 	Cutting timing edge on block pin dlatchrs_36/i2.in[3]
+WARNING(3): Found combinational cycle from timing node 79 to 82
+WARNING(4): 	Cutting timing edge on block pin dlatchrs_36/i2.in[1]
+WARNING(5): Found combinational cycle from timing node 95 to 97
+WARNING(6): 	Cutting timing edge on block pin dlatchrs_36/i3.in[2]
+WARNING(7): Found combinational cycle from timing node 174 to 175
+WARNING(8): 	Cutting timing edge on block pin LUT__46.in[3]
+WARNING(9): Found combinational cycle from timing node 109 to 112
+WARNING(10): 	Cutting timing edge on block pin dlatchrs_36/i4.in[1]
+WARNING(11): Found combinational cycle from timing node 186 to 190
+WARNING(12): 	Cutting timing edge on block pin LUT__47.in[0]
+WARNING(13): Found combinational cycle from timing node 135 to 136
+WARNING(14): 	Cutting timing edge on block pin dlatchrs_36/i1.in[3]
+WARNING(15): Found combinational cycle from timing node 134 to 136
+WARNING(16): 	Cutting timing edge on block pin dlatchrs_36/i1.in[2]
+WARNING(17): Found combinational cycle from timing node 144 to 145
+WARNING(18): 	Cutting timing edge on block pin LUT__43.in[3]
+
+Maximum possible analyzed clocks frequency
+Clock Name           Period (ns)   Frequency (MHz)   Edge
+pll_inst1_CLKOUT0          2.462         406.229     (R-R)
+
+Geomean max period: 2.462
+
+Setup (Max) Clock Relationship
+Launch Clock       Capture Clock      Constraint (ns)   Slack (ns)    Edge
+pll_inst1_CLKOUT0   pll_inst1_CLKOUT0        1.000        -1.462     (R-R)
+
+Hold (Min) Clock Relationship
+Launch Clock       Capture Clock      Constraint (ns)   Slack (ns)    Edge
+pll_inst1_CLKOUT0   pll_inst1_CLKOUT0        0.000         0.642     (R-R)
+
+
+WARNING(19): Clock domain between pll_inst1_CLKOUT0 (rising) and pll_inst1_CLKOUT0 (rising) may not meet (slack: -1.462 ns) the setup (max) timing requirement
+
+final timing analysis took 0.00347369 seconds.
+	final timing analysis took 0.01 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 614.912 MB, end = 617.988 MB, delta = 3.076 MB
+final timing analysis resident set memory usage: begin = 177.876 MB, end = 179.632 MB, delta = 1.756 MB
+	final timing analysis peak resident set memory usage = 280.5 MB
+***** Ending stage final timing analysis *****
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from '/home/mrdust/Documents/efinity/2021.2/project/rp_testing/outflow/rp_testing.interface.csv'.
+Successfully processed interface constraints file "/home/mrdust/Documents/efinity/2021.2/project/rp_testing/outflow/rp_testing.interface.csv".
+Finished writing bitstream file /home/mrdust/Documents/efinity/2021.2/project/rp_testing/work_pnr/rp_testing.lbf.
+Bitstream generation took 0.257783 seconds.
+	Bitstream generation took 0.25 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 617.988 MB, end = 624.204 MB, delta = 6.216 MB
+Bitstream generation resident set memory usage: begin = 179.632 MB, end = 187.188 MB, delta = 7.556 MB
+	Bitstream generation peak resident set memory usage = 280.5 MB
+***** Ending stage bitstream generation *****
+The entire flow of EFX_PNR took 5.65844 seconds.
+	The entire flow of EFX_PNR took 5.84 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 167.208 MB, end = 565.748 MB, delta = 398.54 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 23.52 MB, end = 128.764 MB, delta = 105.244 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 280.5 MB

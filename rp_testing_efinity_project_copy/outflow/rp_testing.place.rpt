@@ -1,0 +1,47 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2021.2.323.2.18 
+Date: Wed May 18 20:47:02 2022
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T8F81
+Top-level Entity Name: rp_testing
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 3 / 96 (3.12%)
+Outputs: 6 / 113 (5.31%)
+Clocks: 1 / 16 (6.25%)
+Logic Elements: 18 / 7384 (0.24%)
+	LE: LUTs/Adders: 16 / 7384 (0.22%)
+	LE: Registers: 2 / 5280 (0.04%)
+Memory Blocks: 0 / 24 (0.00%)
+Multipliers: 0 / 8 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|    clk_output_inst     |    Output    |
+|         BTN[1]         |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+
+---------- IO Placement Summary (begin) ----------
+
++----------------------+--------------+
+| Unassigned Core Pins | Input/Output |
++----------------------+--------------+
+|       clk_out        |    Output    |
++----------------------+--------------+
+
+----------- IO Placement Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 1 seconds

@@ -1,0 +1,646 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:30:09
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:30:43
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:30:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:31:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:31:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:43:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:50:13
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:50:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:51:38
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:20)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:52:35
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:20)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:54:21
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:55:41
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:58:28
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 14:58:48
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 15:49:55
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:25)
+[EFX-0256 WARNING] The primary output port 'pll_inst1_RSTN' wire 'pll_inst1_RSTN' is not driven.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'pll_inst1_RSTN'. (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 15:54:18
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:25)
+[EFX-0256 WARNING] The primary output port 'pll_inst1_RSTN' wire 'pll_inst1_RSTN' is not driven.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'pll_inst1_RSTN'. (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:04:53
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:25)
+[EFX-0256 WARNING] The primary output port 'pll_inst1_RSTN' wire 'pll_inst1_RSTN' is not driven.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'pll_inst1_RSTN'. (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:08:26
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:25)
+[EFX-0256 WARNING] The primary output port 'pll_inst1_RSTN' wire 'pll_inst1_RSTN' is not driven.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'pll_inst1_RSTN'. (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:09:54
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:25)
+[EFX-0256 WARNING] The primary output port 'pll_inst1_RSTN' wire 'pll_inst1_RSTN' is not driven.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'pll_inst1_RSTN'. (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:8)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:15:58
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:19:55
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:22:29
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:25:53
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 16:32:45
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 26 truncated to fit in target size 25 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:21)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:35:42
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:30)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:40:51
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:30)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:43:11
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port pll_inst1_CLKOUT0 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port data_in is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:43:25
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port pll_inst1_CLKOUT0 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port data_in is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:44:16
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port pll_inst1_CLKOUT0 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port data_in is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:44:20
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port pll_inst1_CLKOUT0 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port data_in is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:44:57
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:47:08
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] empty statement in sequential block (VERI-1988) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:27)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:47:20
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:48:15
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:51:59
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:57:24
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 17:59:20
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:02:41
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:06:56
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:17:49
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 04, 2022 18:18:28
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:18:35
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:30:59
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:37:47
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:38:01
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:38:49
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:43:39
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:45:42
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 11:48:13
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:02:33
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:03:22
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:05:17
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:06:59
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:13:10
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:14:03
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:25:48
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:26:21
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:28:09
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:35:04
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:32)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:48:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:48:07
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:49:41
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:52:26
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 12:57:45
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 08, 2022 13:12:21
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:31)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:16:48
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:39)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:21:24
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:39)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:24:12
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:39)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:33:07
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:39)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:35:28
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:40:43
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:43:02
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:43:05
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:43:16
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 19:44:24
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] no support for synthesis of mixed edge and level triggers; assuming level triggers only. (VERI-1084) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:33)
+[EFX-0011 VERI-WARNING] 'BTN' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0011 VERI-WARNING] 'counter' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] latch inferred for net 'counter[3]' (VERI-2580) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:40)
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:06:00
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] no support for synthesis of mixed edge and level triggers; assuming level triggers only. (VERI-1084) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:33)
+[EFX-0011 VERI-WARNING] 'BTN' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:34)
+[EFX-0011 VERI-WARNING] 'counter' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] latch inferred for net 'counter[3]' (VERI-2580) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:40)
+[EFX-0011 VERI-WARNING] 'BTN' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:43)
+[EFX-0011 VERI-WARNING] 'out' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:44)
+[EFX-0654 WARNING] *** COMBINATIONAL LOOP detected! Signals contributing to the loop are: 
+1. out, driver: i23, type PRIM_MUX
+2. n35, driver: i22, type PRIM_INV 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:11:26
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] no support for synthesis of mixed edge and level triggers; assuming level triggers only. (VERI-1084) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:33)
+[EFX-0011 VERI-WARNING] 'counter' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] latch inferred for net 'counter[3]' (VERI-2580) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:40)
+[EFX-0011 VERI-WARNING] 'out' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:44)
+[EFX-0654 WARNING] *** COMBINATIONAL LOOP detected! Signals contributing to the loop are: 
+1. out, driver: i23, type PRIM_MUX
+2. n35, driver: i22, type PRIM_INV 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:12:05
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] 'counter' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] latch inferred for net 'counter[3]' (VERI-2580) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:40)
+[EFX-0011 VERI-WARNING] 'out' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:44)
+[EFX-0654 WARNING] *** COMBINATIONAL LOOP detected! Signals contributing to the loop are: 
+1. out, driver: i23, type PRIM_MUX
+2. n35, driver: i22, type PRIM_INV 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// May 18, 2022 20:46:52
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] 'counter' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:38)
+[EFX-0011 VERI-WARNING] latch inferred for net 'counter[3]' (VERI-2580) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:40)
+[EFX-0011 VERI-WARNING] 'out' should be on the sensitivity list (VERI-1221) (/home/mrdust/Documents/efinity/2021.2/project/rp_testing/rp_testing.v:44)
+[EFX-0654 WARNING] *** COMBINATIONAL LOOP detected! Signals contributing to the loop are: 
+1. out, driver: i23, type PRIM_MUX
+2. n35, driver: i22, type PRIM_INV 
+[EFX-0011 VERI-WARNING] Input/Inout Port BTN[1] is unconnected and will be removed 

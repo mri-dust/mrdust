@@ -1,0 +1,12 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2021.2.323.2.18 
+Date: Wed May 18 20:47:03 2022
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T8F81
+Top-level Entity Name: rp_testing
+Elapsed time for routing: 0 hours 0 minutes 0 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 5 seconds
